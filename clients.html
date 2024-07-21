@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSense Clients</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D9D9D9;
+        }
+        .top-line {
+            background-color: #00a651;
+            height: 5px;
+        }
+        .navbar {
+            background-color: #D9D9D9;
+            color: #00a651;
+            padding: 10px 160px; /* Adjusted padding to match index page */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 60px;
+        }
+        .navbar a {
+            color: #00a651;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            padding: 20px 160px; /* Adjusted padding to match index page */
+            color: #00a651;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            width: 100%;
+            margin-top: 40px; /* Added margin to create space from the navbar */
+        }
+        .profile-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .profile-box:hover {
+            background-color: #f0f0f0;
+        }
+        .profile-header {
+            background-color: #00a651;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            width: 96.6%;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 50px; /* Increased margin to create more space between name and image */
+            position: absolute;
+            top: -20px;
+            left: 0;
+        }
+        .profile-content {
+            padding: 40px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            color: black;
+            position: relative;
+            z-index: 1;
+        }
+        .profile-image {
+            border-radius: 50%;
+            margin-bottom: 20px; /* Keeps space below the image */
+            width: 100px;
+            height: 100px;
+        }
+        .profile-info {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .star {
+            width: 20px;
+            height: 20px;
+            background-color: gold;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-line"></div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Log.png" alt="EcoSense Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="clients.html">Clients</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="profile-container">
+            <!-- Profile Template -->
+            <div class="profile-box">
+                <div class="profile-header">
+                    <h2>Elon Musk</h2>
+                </div>
+                <div class="profile-content">
+                    <img src="Elon_Musk.jpg" alt="Profile Image" class="profile-image">
+                    <div class="profile-info">
+                        <p>'As an advocate for sustainable technology and reducing carbon emissions, EcoSense helps me determine the carbon footprint of my vacation activities and provides eco-friendly alternatives.'</p>
+                        <div class="star-rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <p>5 Star Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more profiles here -->
+            <div class="profile-box">
+                <div class="profile-header">
+                    <h2>Mark Zuckerberg</h2>
+                </div>
+                <div class="profile-content">
+                    <img src="zuckerberg.jpg" alt="Profile Image" class="profile-image">
+                    <div class="profile-info">
+                        <p>'Loving what EcoSense is doing. This app makes it simple to choose lower-carbon vacation options, reflecting our commitment to sustainability. Perfect for anyone wanting to lower their carbon footprint while traveling.'</p>
+                        <div class="star-rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star half"></div>
+                            <p>4.5 Star Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-box">
+                <div class="profile-header">
+                    <h2>Bill Gates</h2>
+                </div>
+                <div class="profile-content">
+                    <img src="gates.jpg" alt="Profile Image" class="profile-image">
+                    <div class="profile-info">
+                        <p>'Joined EcoSense a few months ago and have been thoroughly impressed with its capabilities. EcoSense makes sustainable travel accessible and easy, and it's a fantastic step forward in our fight against climate change.'</p>
+                        <div class="star-rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <p>4 Star Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-box">
+                <div class="profile-header">
+                    <h2>Sundar Pichai</h2>
+                </div>
+                <div class="profile-content">
+                    <img src="sundar.jpg" alt="Profile Image" class="profile-image">
+                    <div class="profile-info">
+                        <p>'The interface is user-friendly and provides impactful insights, helping us make more eco-friendly choices, especially in the face of rising emissions.'</p>
+                        <div class="star-rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <p>5 Star Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

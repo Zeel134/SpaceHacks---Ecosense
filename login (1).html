@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSense Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #D9D9D9; /* Corrected background color */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            display: flex;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 1200px; /* Increased width */
+            position: relative;
+        }
+        .login-form {
+            background-color: #19a463;
+            padding: 80px; /* Increased padding */
+            flex: 1;
+            color: white;
+        }
+        .login-form h2 {
+            margin: 0 0 20px;
+            font-size: 35px; /* Increased font size */
+            font-family: 'Raleway', sans-serif; /* Raleway font */
+        }
+        .login-form p {
+            font-size: 18px; /* Increased font size */
+        }
+        .login-form input {
+            width: 100%;
+            padding: 15px; /* Increased padding */
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px; /* Increased font size */
+        }
+        .login-form button {
+            margin-top: 10px;
+            width: 40%;
+            padding: 15px; /* Increased padding */
+            border: none;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #19a463;
+            font-size: 18px; /* Increased font size */
+            cursor: pointer;
+        }
+        .signup-box {
+            background: url('Scene.png') no-repeat center center/cover;
+            flex: 1;
+            position: relative;
+            color: white;
+            padding: 80px; /* Increased padding */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .signup-box h2 {
+            margin: 0;
+            font-size: 35px; /* Increased font size */
+            font-family: 'Raleway', sans-serif; /* Raleway font */
+        }
+        .signup-box p {
+            margin: 7px;
+            font-size: 18px; /* Increased font size */
+        }
+        .signup-box button {
+            margin-top: 20px;
+            padding: 15px 25px; /* Increased padding */
+            border: none;
+            border-radius: 5px;
+            background-color: #19a463;
+            color: white;
+            font-size: 18px; /* Increased font size */
+            cursor: pointer;
+            border: 5px solid white; /* Add white border here */
+        }
+        .header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .header-logo {
+            display: flex;
+            align-items: center;
+            margin-left: 160px; /* Align with content */
+        }
+        .header-logo img {
+            height: 60px;
+        }
+        .header nav {
+            display: flex;
+            margin-right: 160px; /* Align with content */
+        }
+        .header nav a {
+            margin: 0 1rem; /* Adjusted margin for consistent spacing */
+            text-decoration: none;
+            color: #00a651;
+            font-weight: bold;
+            font-size: 20px; /* Increased font size */
+            font-family: 'Montserrat', sans-serif; /* Montserrat font */
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 36px; /* Increased font size */
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 10; /* Ensures button is above other content */
+        }
+        .close-btn:hover {
+            color: #f0f0f0; /* Slightly lighter color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="Log.png" alt="EcoSense Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="clients.html">Clients</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="login-box">
+            <button class="close-btn" onclick="window.location.href='index.html'">×</button>
+            <div class="login-form">
+                <h2>SIGN IN</h2>
+                <p>Login and start exploring EcoSense</p>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button>Sign In</button>
+            </div>
+            <div class="signup-box">
+                <h2>NEW HERE?</h2>
+                <p><center>Sign Up and discover everything <br>EcoSense has to offer</center></p>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/eaba2d13-9aae-4d5f-9bde-01c308a8b853/webchat/config.js" defer></script>
+</body>
+</html>

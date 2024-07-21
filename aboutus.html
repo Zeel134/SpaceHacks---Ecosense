@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSense - About Our Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #D9D9D9;
+        }
+
+        .top-line {
+            background-color: #00a651;
+            height: 5px;
+        }
+
+        header {
+            background-color: #D9D9D9;
+            padding: 10px 160px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #00a651;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            margin-left: 160px;
+            margin-right: 160px;
+        }
+
+        .about h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.5rem;
+            color: #00a651;
+            margin-top: 50px;
+        }
+
+        .about p {
+            font-family: 'Montserrat', sans-serif;
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.6;
+            color: #00a651;
+        }
+
+        .testimonial {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 60px 0;
+        }
+
+        .testimonial-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            max-width: 400px;
+        }
+
+        .testimonial-item .letter {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00a651;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            font-family: 'Raleway', sans-serif;
+            color: #00a651;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 20px; /* Added space below the circle */
+        }
+
+        .name-box {
+            background-color: #00a651;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .testimonial-content {
+            background-color: #00a651;
+            color: white; /* Changed font color to white */
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 100%; /* Ensures the content box is consistent */
+            text-align: center;
+            margin-top: 10px;
+            box-sizing: border-box; /* Ensures padding and border are included in the width */
+        }
+
+        /* Adjusting height to make boxes same size */
+        .testimonial-item:nth-child(1) .testimonial-content {
+            height: 180px; /* Adjust this value as needed */
+        }
+
+        .testimonial-item:nth-child(2) .testimonial-content {
+            height: 180px; /* Adjust this value as needed */
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            margin: 0;
+            color: white; /* Ensures text is white */
+            height: 100%; /* Makes sure text box is fully utilized */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 40px; /* Increased star size */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-line"></div>
+    <header>
+        <div class="logo">
+            <img src="Log.png" alt="EcoSense Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h1>ABOUT OUR COMPANY</h1>
+            <p>
+                Founded in 2023, EcoSense is dedicated to creating a sustainable future through innovative environmental solutions. Our mission is to develop cutting-edge technologies that help individuals and businesses reduce their environmental footprints.
+            </p>
+            <p>
+                At EcoSense, we believe in the power of technology to drive positive change. Our team of experts is committed to developing sustainable solutions that promote energy efficiency, reduce waste, and protect natural resources.
+            </p>
+            <p>
+                Join us on our journey to make the world a cleaner, greener place. Together, we can make a difference.
+            </p>
+            <div class="testimonial">
+                <div class="testimonial-item">
+                    <div class="letter">A</div>
+                    <div class="name-box">Alex M</div>
+                    <div class="testimonial-content">
+                        <p>"EcoSense's products are a game-changer for anyone serious about sustainability. Their energy-saving devices have not only reduced my bills but also my carbon footprint. I appreciate their commitment to both innovation and the environment."</p>
+                    </div>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="letter">J</div>
+                    <div class="name-box">Jordan S</div>
+                    <div class="testimonial-content">
+                        <p>"I've been using EcoSense's biodegradable packaging and it's fantastic. The quality is excellent, and knowing I'm reducing waste feels great. Their customer service is also top-notch. Highly recommend!"</p>
+                    </div>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="letter">T</div>
+                    <div class="name-box">Taylor W</div>
+                    <div class="testimonial-content">
+                        <p>"EcoSense is my go-to for eco-friendly products. Their range of sustainable gadgets is impressive, and I love the fact that they are making a real difference. The quality and impact are unparalleled. Definitely worth a try!"</p>
+                    </div>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
